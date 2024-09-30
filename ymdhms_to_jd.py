@@ -39,6 +39,6 @@ jd = day - 32075 + \
     int(3*int((year + 4900 + int((month - 14)/12))/100)/4)
 
 jd_mid = jd - 0.5
-d_frac = (second + 60*(month + 60*hour))/86400
+d_frac = (second + 60*(minute + 60*hour))/86400
 jd_frac = jd_mid + d_frac
 print(jd_frac)
